@@ -1,0 +1,189 @@
+@use '../../css/variables.scss' as *;
+@use '../../css/layout.scss' as *;
+
+.pageWelcome {
+    @include flex;
+    gap: 5rem;
+    height: 45rem;
+    justify-content: center;
+    a:hover,a:active{
+    text-decoration:none;
+    }
+    .home{
+    width: 30%;
+    }
+    .home h3{
+    font-size:74px;
+    text-align: left;
+    color: $main-green;
+    font-weight:700;
+    }
+
+    .stage{
+    width: auto;
+    margin-top: 7rem;
+    }
+    .cubespinner{
+    animation-name:spincube;
+
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:infinite;
+    animation-duration:8s;
+    transform-style:preserve-3d;
+    transform-origin:40px 40px  0;
+    }
+    .cubespinner div{
+        position:absolute;
+        width:400px;
+        height:80px;
+        text-align:left;
+        color: $main-green;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 61px;
+        font-weight:700;
+        }
+    .cubespinner .face1{
+        color: $main-yellow;
+        transform:translateZ(40px);
+        -webkit-backface-visibility: hidden;
+        }
+    .cubespinner .face2{
+        color: $white;
+        transform: rotateX(90deg) translateZ(40px);
+        -webkit-backface-visibility: hidden;
+    }
+    .cubespinner .face3{
+        color: $main-indian-red;
+        transform:rotateX(180deg)  translateZ(40px);
+        -webkit-backface-visibility: hidden;
+        }
+    .cubespinner .face4{
+        color:$white;
+        transform:rotateX(270deg) translateZ(40px);
+        -webkit-backface-visibility: hidden;
+    }
+
+
+    @-webkit-keyframes spincube {
+    from,to  { -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
+    15%      { -webkit-transform: rotateX(90deg);}
+    25%      { -webkit-transform: rotateX(90deg);}
+    40%      { -webkit-transform: rotateX(180deg);}
+    50%      { -webkit-transform: rotateX(180deg);}
+    65%      { -webkit-transform: rotateX(270deg);}
+    75%      { -webkit-transform: rotateX(270deg);}
+    95%      { -webkit-transform: rotateX(360deg);}
+    100%      { -webkit-transform: rotateX(360deg);}
+    }
+    @keyframes spincube {
+    from,to {
+        transform: rotateX(0deg);
+    }
+    15% {
+        transform: rotateX(90deg);
+    }
+    25% {
+        transform: rotateX(90deg);
+    }
+    40% {
+        transform: rotateX(180deg);
+    }
+    50% {
+        transform: rotateX(180deg);
+    }
+    65% {
+        transform: rotateX(270deg);
+    }
+    75% {
+        transform: rotateX(270deg);
+    }
+    90% {
+        transform: rotateX(360deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+    }
+    .image {
+        position: absolute;
+        right: 5%;
+        top: 29%;
+        @include flex;
+        align-items: end;
+        gap: 5rem;
+        img {
+            border-radius: 50%;
+            width: 23rem;
+            height: 23rem;
+            margin-right: 2rem;
+            @media (max-width: 1000px) {
+                display: none;
+            }
+        }
+        .description {
+            max-width: 50rem;
+            color: #999;
+            font-style: italic;
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 1px $main-yellow;
+            @media (max-width: 1000px) {
+                position: relative;
+                bottom: -30rem;
+                right: 0;
+            }
+        }
+    }
+
+    .me {
+        position: relative;
+        p {
+            font-size: 1.5rem;
+            color: $main-orange;
+        }
+        .backName {
+            font-size: 9rem;
+            position: absolute;
+            left: 3%;
+            top: -70%;
+            max-width: 5rem;
+            z-index: -1;
+            color: #444;
+            @media (max-width: 767px) {
+                font-size: 5rem;
+            }
+        }
+    .welcome {
+        .name, .title {
+            height: 45px;
+            white-space: nowrap;
+            overflow: hidden; 
+            font-family: 'Source Code Pro', monospace;  
+            font-size: 1.8rem;
+            color: rgba(255,255,255,.70);
+            position: relative;
+        }
+        #border {
+            border-bottom: solid 3px $main-green;
+            position: absolute;
+            right: -7px;
+            width: 21px;
+            animation: animated-cursor 600ms steps(30,end) infinite;
+        }
+        .name {
+            animation: animated-text 2s steps(30,end) 1s 1 normal both
+    }
+    .title {
+        text-align: end;
+        animation: animated-text 2s steps(30,end) 3s 1 normal both
+        }
+    }
+        @keyframes animated-text{
+            from{width: 0;}
+            to{width: 400px;}
+        }
+        @keyframes animated-cursor{
+            from{border-bottom-color: $main-green;}
+            to{border-bottom-color: transparent;}
+        }
+    }
+}
