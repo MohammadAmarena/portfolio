@@ -1,3 +1,9 @@
+import translator from '../../src/assets/images/translator.png';
+import shop from '../../src/assets/images/shpo.png';
+import slider from '../../src/assets/images/slider.png';
+import filterableTable from '../../src/assets/images/filterableTable.png';
+import drum from "../../src/assets/images/drum.png";
+
 export const personData = [
     {
         firstName: "Mohammad",
@@ -7,7 +13,50 @@ export const personData = [
         image: "../images/me.jpeg",
         hobbys: ["Chess", "football"]
     }
-]
+];
+
+export const projectsData = [
+    {
+    id: 1,
+    name: "Languages translator",
+    image: translator,
+    tags: ["html", "sass", "javaScript", "pugjs"],
+    source_code: "https://github.com/MohammadAmarena/Language-Translator-using-React-Hooks",
+    demo: "https://mohammadamarena.github.io/Language-Translator-using-React-Hooks/"
+    },
+    {
+    id: 2,
+    name: "Shop",
+    image: shop,
+    tags: ["html", "css-modules", "javaScript"],
+    source_code: "https://github.com/MohammadAmarena/shopping-cart",
+    demo: "https://mohammadamarena.github.io/shopping-cart/"
+    },
+    {
+    id: 4,
+    name: "Image Slider",
+    image: slider,
+    tags: ["html", "bootstrap"],
+    source_code: "https://github.com/MohammadAmarena/imageSlider",
+    demo: "..."
+    },
+    {
+    id: 5,
+    name: "Filterable-table",
+    image: filterableTable,
+    tags: ["html", "bootstrap"],
+    source_code: "https://github.com/MohammadAmarena/filterableTable",
+    demo: "..."
+    },
+    {
+    id: 6,
+    name: "Drum Kit",
+    image: drum,
+    tags: ["html", "bootstrap"],
+    source_code: "https://github.com/MohammadAmarena/drum-kit",
+    demo: "..."
+    }
+];
 
 export const skillsData = [
     {

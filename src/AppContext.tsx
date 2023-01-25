@@ -1,7 +1,6 @@
 import { useState, createContext } from 'react'
 import { IPerson, IProject, ISkills } from './interfaces'
-import { personData, skillsData, colorsData } from './data/person.js'
-import projectsData from './data/projectsData.json'
+import { personData, projectsData, skillsData, colorsData } from './data/person.js'
 interface IAppContext {
     person: IPerson[],
     projects: IProject[];
