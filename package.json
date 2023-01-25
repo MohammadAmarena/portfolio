@@ -18,7 +18,8 @@
     "react-helmet": "^6.1.0",
     "react-router-dom": "^6.6.2",
     "react-skillbars": "^2.1.0",
-    "sass": "^1.57.1"
+    "sass": "^1.57.1",
+    "vercel": "^28.13.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.22",
