@@ -13,7 +13,7 @@ export const projectsData = [
     {
     id: 1,
     name: "Languages translator",
-    image: "../../src/assets/translator.png",
+    image: "../../public/images/translator.png",
     tags: ["html", "sass", "javaScript", "pugjs"],
     source_code: "https://github.com/MohammadAmarena/Language-Translator-using-React-Hooks",
     demo: "https://mohammadamarena.github.io/Language-Translator-using-React-Hooks/"
@@ -21,7 +21,7 @@ export const projectsData = [
     {
     id: 2,
     name: "Shop",
-    image: "../../src/assets/shpo.png",
+    image: "../../public/images/shpo.png",
     tags: ["html", "css-modules", "javaScript"],
     source_code: "https://github.com/MohammadAmarena/shopping-cart",
     demo: "https://mohammadamarena.github.io/shopping-cart/"
@@ -29,7 +29,7 @@ export const projectsData = [
     {
     id: 4,
     name: "Image Slider",
-    image: "../../src/assets/image-slider.png",
+    image: "../../public/images/image-slider.png",
     tags: ["html", "bootstrap"],
     source_code: "https://github.com/MohammadAmarena/imageSlider",
     demo: "..."
@@ -37,7 +37,7 @@ export const projectsData = [
     {
     id: 5,
     name: "Filterable Table",
-    image: "../../src/assets/filterable-table.png",
+    image: "../../public/images/filterable-table.png",
     tags: ["html", "bootstrap"],
     source_code: "https://github.com/MohammadAmarena/filterableTable",
     demo: "..."
@@ -45,7 +45,7 @@ export const projectsData = [
     {
     id: 6,
     name: "Drum Kit",
-    image: "../../src/assets/drum-kit.png",
+    image: "../../public/images/drum-kit.png",
     tags: ["html", "bootstrap"],
     source_code: "https://github.com/MohammadAmarena/drum-kit",
     demo: "..."
