@@ -20,7 +20,7 @@ export const projectsData = [
     id: 1,
     name: "Languages translator",
     image: translator,
-    tags: ["html", "sass", "javaScript", "pugjs"],
+    tags: ["react", "sass", "typeScript"],
     source_code: "https://github.com/MohammadAmarena/Language-Translator-using-React-Hooks",
     demo: "https://mohammadamarena.github.io/Language-Translator-using-React-Hooks/"
     },
@@ -28,7 +28,7 @@ export const projectsData = [
     id: 2,
     name: "Shop",
     image: shop,
-    tags: ["html", "css-modules", "javaScript"],
+    tags: ["html", "scss", "javaScript"],
     source_code: "https://github.com/MohammadAmarena/shopping-cart",
     demo: "https://mohammadamarena.github.io/shopping-cart/"
     },
@@ -36,7 +36,7 @@ export const projectsData = [
     id: 4,
     name: "Image Slider",
     image: slider,
-    tags: ["html", "bootstrap"],
+    tags: ["react", "scss", "javaScript"],
     source_code: "https://github.com/MohammadAmarena/imageSlider",
     demo: "..."
     },
@@ -44,7 +44,7 @@ export const projectsData = [
     id: 5,
     name: "Filterable-table",
     image: filterableTable,
-    tags: ["html", "bootstrap"],
+    tags: ["react", "scss", "javaScript"],
     source_code: "https://github.com/MohammadAmarena/filterableTable",
     demo: "..."
     },
@@ -52,7 +52,7 @@ export const projectsData = [
     id: 6,
     name: "Drum Kit",
     image: drum,
-    tags: ["html", "bootstrap"],
+    tags: ["html", "scss", "javascript"],
     source_code: "https://github.com/MohammadAmarena/drum-kit",
     demo: "..."
     }

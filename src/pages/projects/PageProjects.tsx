@@ -24,6 +24,13 @@ export const PageProjects = () => {
 									<p className='description'>
 										Some quick example text to build on the card title and make up the bulk of the card's content.
 									</p>
+									<div className="tags">
+										{project.tags.map(tag => {
+											return (
+												<span className={tag === 'sass' ? 'redTag' : tag ===  'react' ? 'yellowTag' : tag ===  'html' ? 'orangeTag' : 'blueTag'}>{tag}</span>
+											)
+										})}
+									</div>
 									<div className="links">
 										<a href={project.source_code}><i className="fa-brands fa-github fa-2x"></i></a>
 										<a href={project.demo}>{project.demo.length > 5 ? <i className="fa-solid fa-globe fa-2x"></i> : ''}</a>
