@@ -46,21 +46,25 @@
         color: $main-yellow;
         transform:translateZ(40px);
         -webkit-backface-visibility: hidden;
-        }
+        backface-visibility: hidden;
+    }
     .cubespinner .face2{
         color: $white;
         transform: rotateX(90deg) translateZ(40px);
         -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
     .cubespinner .face3{
         color: $main-indian-red;
         transform:rotateX(180deg)  translateZ(40px);
         -webkit-backface-visibility: hidden;
-        }
+        backface-visibility: hidden;
+    }
     .cubespinner .face4{
         color:$white;
         transform:rotateX(270deg) translateZ(40px);
         -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
 
 
