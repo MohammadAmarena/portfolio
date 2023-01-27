@@ -44,6 +44,9 @@
         font-family: 'Courier New', Courier, monospace;
         font-size: 61px;
         font-weight:700;
+        @media (max-width: 767px) {
+            font-size: 45px;
+        }
         }
     .cubespinner .face1{
         color: $main-yellow;
@@ -145,7 +148,7 @@
         position: relative;
         p {
             font-size: 1.5rem;
-            color: $main-orange;
+            color: $main-yellow;
         }
         .backName {
             font-size: 9rem;
@@ -155,19 +158,23 @@
             max-width: 5rem;
             z-index: -1;
             color: #444;
-            @media (max-width: 767px) {
-                font-size: 5rem;
-            }
+            @media (max-width: 600px) {
+                font-size: 4rem;
+            } 
         }
     .welcome {
         .name, .title {
             height: 45px;
             white-space: nowrap;
             overflow: hidden; 
-            font-family: 'Source Code Pro', monospace;  
+            font-family: 'corier';  
             font-size: 1.8rem;
             color: rgba(255,255,255,.70);
             position: relative;
+            @media (max-width: 700px) {
+                font-size: 1.5rem;
+                max-width: 300px;
+            } 
         }
         #border {
             border-bottom: solid 3px $main-green;
@@ -177,7 +184,8 @@
             animation: animated-cursor 600ms steps(30,end) infinite;
         }
         .name {
-            animation: animated-text 2s steps(30,end) 1s 1 normal both
+            animation: animated-text 2s steps(30,end) 1s 1 normal both;
+            color: $main-indian-red;
     }
     .title {
         text-align: end;

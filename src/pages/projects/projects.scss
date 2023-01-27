@@ -19,9 +19,9 @@
           }
         }
         @media (max-width: 768px) {
-          width: 90%;
+          width: 100%;
           .image {
-            width: 90%;
+            width: 100%;
           }
         }
         .card-body {
@@ -35,7 +35,7 @@
             color: white;
           }
           .tags {
-            width: 400px;
+            width: 100%;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -70,9 +70,6 @@
                 }
               }
             }
-          }
-          @media (max-width: 768px) {
-            width: 90%;
           }
         }
       }
