@@ -21,9 +21,7 @@ export const PageProjects = () => {
 								</div>
 								<div className='card-body'>
 									<h2 className='title'>{project.name}</h2>
-									<p className='description'>
-										Some quick example text to build on the card title and make up the bulk of the card's content.
-									</p>
+									<p className='description'>{project.description}</p>
 									<div className="tags">
 										{project.tags.map(tag => {
 											return (

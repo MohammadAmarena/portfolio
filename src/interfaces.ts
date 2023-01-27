@@ -5,16 +5,18 @@ export interface IPerson {
     status: string;
     hobbys: string[];
     image: string;
+    description: string;
 }
 
 export interface IProject {
-	[x: string]: any;
+    [x: string]: any;
     id: number;
     name: string;
     image: string;
     tags: string[];
     source_code: string;
     demo: string;
+    description: string;
 }
 export interface ISkills {
     type: string;

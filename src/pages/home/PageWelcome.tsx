@@ -2,11 +2,10 @@ import { Helmet } from 'react-helmet'
 import { Key, useContext } from 'react'
 import { AppContext } from '../../AppContext'
 import './welcome.scss'
-import myImage from '../../assets/images/me.jpeg'
 
 export const PageWelcome = () => {
 	const { person } = useContext(AppContext)
-	
+
 	return (
 		<div className="page pageWelcome">
 			<Helmet>
@@ -14,8 +13,8 @@ export const PageWelcome = () => {
 			</Helmet>
 			<div className="me">
 				<p>Hi Lay</p>
-				<div className="backName">Mohammad Amaren</div>
-				{person.map((p, i: Key)=>    {
+				<div className="backName">Mern Developer</div>
+				{person.map((p, i: Key) => {
 					return (
 						<div className='welcome' key={i}>
 							<div className="name">
@@ -43,13 +42,17 @@ export const PageWelcome = () => {
 					</span>
 				</h3>
 			</div>
-			<div className="image">
-				<img src={myImage} alt="me" />
-				<div className="description">
-				A web developer who has a passion for technology, data reading and design
-				I am enthusiastic and motivated to solve problems and ready for new challenges that I enjoy more
-				</div>
-			</div>
+			{person.map(p => {
+				return (
+					<div className="image">
+						<img src={p.image} alt="me" />
+						<div className="description">
+							{p.description}
+						</div>
+
+					</div>
+				)
+			})}
 		</div>
 	);
 };

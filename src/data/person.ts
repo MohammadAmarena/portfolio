@@ -3,14 +3,15 @@ import shop from '../../src/assets/images/shpo.png';
 import slider from '../../src/assets/images/slider.png';
 import filterableTable from '../../src/assets/images/filterableTable.png';
 import drum from "../../src/assets/images/drum.png";
-
+import myImage from '../../src/assets/images/me.jpeg'
 export const personData = [
     {
         firstName: "Mohammad",
         lastName: "Amaren",
         city: "Eberswalde",
         status: "active",
-        image: "../images/me.jpeg",
+        image: myImage,
+        description: 'A web developer who has a passion for technology, data reading and design I am enthusiastic and motivated to solve problems and ready for new challenges that I enjoy more',
         hobbys: ["Chess", "football"]
     }
 ];
@@ -22,39 +23,44 @@ export const projectsData = [
     image: translator,
     tags: ["react", "sass", "typeScript"],
     source_code: "https://github.com/MohammadAmarena/Language-Translator-using-React-Hooks",
-    demo: "https://mohammadamarena.github.io/Language-Translator-using-React-Hooks/"
-    },
-    {
+    demo: "https://mohammadamarena.github.io/Language-Translator-using-React-Hooks/",
+    description: "Some quick example text to build on the card title and make up the bulk of the card's content."
+},
+{
     id: 2,
     name: "Shop",
     image: shop,
     tags: ["html", "scss", "javaScript"],
     source_code: "https://github.com/MohammadAmarena/shopping-cart",
-    demo: "https://mohammadamarena.github.io/shopping-cart/"
-    },
-    {
+    demo: "https://mohammadamarena.github.io/shopping-cart/",
+    description: "Some quick example text to build on the card title and make up the bulk of the card's content."
+},
+{
     id: 4,
     name: "Image Slider",
     image: slider,
     tags: ["react", "scss", "javaScript"],
     source_code: "https://github.com/MohammadAmarena/imageSlider",
-    demo: "..."
-    },
-    {
+    demo: "https://image-slid.netlify.app/",
+    description: "Some quick example text to build on the card title and make up the bulk of the card's content."
+},
+{
     id: 5,
     name: "Filterable-table",
     image: filterableTable,
     tags: ["react", "scss", "javaScript"],
     source_code: "https://github.com/MohammadAmarena/filterableTable",
-    demo: "..."
-    },
-    {
+    demo: "...",
+    description: "Some quick example text to build on the card title and make up the bulk of the card's content."
+},
+{
     id: 6,
     name: "Drum Kit",
     image: drum,
     tags: ["html", "scss", "javascript"],
     source_code: "https://github.com/MohammadAmarena/drum-kit",
-    demo: "..."
+    demo: "...",
+    description: "Some quick example text to build on the card title and make up the bulk of the card's content."
     }
 ];
 
@@ -73,7 +79,7 @@ export const skillsData = [
 	},
 	{
 		type: "CSS",
-		level: 80
+		level: 85
 	},
 	{
 		type: "BOOTSTRAP",
@@ -81,7 +87,7 @@ export const skillsData = [
 	},
 	{
 		type: "SASS",
-		level: 85
+		level: 80
 	},
 	{
         type: "NODE.JS",
