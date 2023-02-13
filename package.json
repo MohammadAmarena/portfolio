@@ -8,8 +8,8 @@
 		"build": "tsc --build --clean && vite build",
 		"start": "vite serve --host --port 5173",
 		"cp": "node cli/cp.mjs",
-		"setup": "npm i && pm2 start --name portfolio-amaren-net npm -- start --update-env --time && pm2 save",
-		"deploy": "git pull --no-rebase && pm2 restart portfolio-amaren-net --update-env --time && pm2 save"
+		"setup": "npm i && pm2 start --name portfolio npm -- start --update-env --time && pm2 save",
+		"deploy": "git pull --no-rebase && pm2 restart portfolio --update-env --time && pm2 save"
 	},
   "dependencies": {
     "axios": "^1.2.2",
