@@ -21,7 +21,7 @@ export const PageWelcome = () => {
 								Im {p.firstName} {p.lastName}
 							</div>
 							<div className="title">
-								FULL-STACK DEVELOPER
+								FULL-STACK WEB DEVELOPER
 								<div id="border"></div>
 							</div>
 						</div>
