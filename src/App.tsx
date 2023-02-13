@@ -17,16 +17,16 @@ function App() {
           </div>
         </div>
         <nav>
-          <NavLink to='/welcome'>Welcome</NavLink>
+          <NavLink to='/'>Welcome</NavLink>
           <NavLink to='/projects'>Projects</NavLink>
           <NavLink to='/skills'>Skills</NavLink>
         </nav>
 
         <Routes>
-          <Route path='/welcome' element={<PageWelcome />} />
+          <Route path='/' element={<PageWelcome />} />
           <Route path='/projects' element={<PageProjects />} />
           <Route path='/skills' element={<PageSkills />} />
-          <Route path='/' element={<Navigate to='/welcome' replace />} />
+          <Route path='/' element={<Navigate to='/' replace />} />
         </Routes>
       </div>
     </div>
