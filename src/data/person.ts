@@ -4,6 +4,7 @@ import slider from '../../src/assets/images/slider.png';
 import filterableTable from '../../src/assets/images/filterableTable.png';
 import drum from "../../src/assets/images/drum.png";
 import myImage from '../../src/assets/images/me.jpeg'
+import toDoApp from '../../src/assets/images/toDoApp.png'
 export const personData = [
     {
         firstName: "Mohammad",
@@ -27,21 +28,30 @@ export const projectsData = [
     description: "Some quick example text to build on the card title and make up the bulk of the card's content."
 },
 {
-    id: 2,
+	id: 2,
+	name: "ToDo App",
+	image: toDoApp,
+	tags: ["typescript", "react", "sass"],
+	source_code: "https://github.com/MohammadAmarena/todoApp",
+	demo: "https://todo-app-steel-eight.vercel.app/",
+	description: "Some quick example text to build on the card title and make up the bulk of the card's content."
+	},
+	{
+	id: 3,
+	name: "Image Slider",
+	image: slider,
+	tags: ["react", "scss", "javaScript"],
+	source_code: "https://github.com/MohammadAmarena/imageSlider",
+	demo: "https://image-slid.netlify.app/",
+	description: "Some quick example text to build on the card title and make up the bulk of the card's content."
+},
+{
+    id: 4,
     name: "Shop",
     image: shop,
     tags: ["html", "scss", "javaScript"],
     source_code: "https://github.com/MohammadAmarena/shopping-cart",
     demo: "https://mohammadamarena.github.io/shopping-cart/",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content."
-},
-{
-    id: 4,
-    name: "Image Slider",
-    image: slider,
-    tags: ["react", "scss", "javaScript"],
-    source_code: "https://github.com/MohammadAmarena/imageSlider",
-    demo: "https://image-slid.netlify.app/",
     description: "Some quick example text to build on the card title and make up the bulk of the card's content."
 },
 {

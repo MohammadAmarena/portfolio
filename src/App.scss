@@ -13,13 +13,13 @@
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #333;
+    background-color: #998;
     .App {
         .container {
             position: relative;
             background-color: rgba(68, 65, 65, .2);
             margin: auto;
-            height: 92vh;
+            height: 100%;
             padding: 1.5rem;
             @include breakpoints(mobile) {
                 width: 90%;
@@ -107,7 +107,7 @@ body {
             display: flex;
             justify-content: end;
             gap: 2rem;
-            margin-top: 1rem;
+            margin: 1rem 0;
             padding: 1rem 17rem 2rem;
             font-size: 1.3rem;
             background-color: #333;
