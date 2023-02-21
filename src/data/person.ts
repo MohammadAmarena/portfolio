@@ -12,7 +12,7 @@ export const personData = [
         city: "Eberswalde",
         status: "active",
         image: myImage,
-        description: 'A web developer who has a passion for technology, data reading and design I am enthusiastic and motivated to solve problems and ready for new challenges that I enjoy more',
+        description: 'As a web developer, I specialize in creating custom websites that are tailored to meet the specific needs of my clients. With a focus on clean, efficient code and responsive design, I strive to deliver intuitive and visually compelling websites that help my clients achieve their business goals.',
         hobbys: ["Chess", "football"]
     }
 ];
@@ -25,7 +25,7 @@ export const projectsData = [
     tags: ["react", "sass", "typeScript"],
     source_code: "https://github.com/MohammadAmarena/Language-Translator-using-React-Hooks",
     demo: "https://mohammadamarena.github.io/Language-Translator-using-React-Hooks/",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content."
+    description: "Convert written material from one or more 'source languages' into the 'target language', making sure that the translated version conveys the meaning of the original as clearly as possible."
 },
 {
 	id: 2,
@@ -34,7 +34,7 @@ export const projectsData = [
 	tags: ["typescript", "react", "sass"],
 	source_code: "https://github.com/MohammadAmarena/todoApp",
 	demo: "https://todo-app-steel-eight.vercel.app/",
-	description: "Some quick example text to build on the card title and make up the bulk of the card's content."
+	description: "ToDo App is generally used to maintain our day-to-day tasks or list everything that we have to do, and the least important tasks at the bottom. It is helpful in planning our daily schedules."
 	},
 	{
 	id: 3,
@@ -43,9 +43,9 @@ export const projectsData = [
 	tags: ["react", "scss", "javaScript"],
 	source_code: "https://github.com/MohammadAmarena/imageSlider",
 	demo: "https://image-slid.netlify.app/",
-	description: "Some quick example text to build on the card title and make up the bulk of the card's content."
+	description: "A feature used on websites to display multiple images in a single space. With a button to toggle image descriptions, view additional context without cluttering the display."
 },
-{
+/* {
     id: 4,
     name: "Shop",
     image: shop,
@@ -53,7 +53,7 @@ export const projectsData = [
     source_code: "https://github.com/MohammadAmarena/shopping-cart",
     demo: "https://mohammadamarena.github.io/shopping-cart/",
     description: "Some quick example text to build on the card title and make up the bulk of the card's content."
-},
+}, */
 {
     id: 5,
     name: "Filterable-table",
@@ -61,7 +61,7 @@ export const projectsData = [
     tags: ["react", "scss", "javaScript"],
     source_code: "https://github.com/MohammadAmarena/filterableTable",
     demo: "...",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content."
+    description: "Filterable tables streamline displayed data by allowing users to search, filter, users can selectively show or hide specific items to streamline the displayed data"
 },
 {
     id: 6,
@@ -70,7 +70,7 @@ export const projectsData = [
     tags: ["html", "scss", "javascript"],
     source_code: "https://github.com/MohammadAmarena/drum-kit",
     demo: "...",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content."
+    description: "A drum kit can refer to a physical set of instruments or a virtual instrument software or app that simulates the sound and experience of playing a physical drum kit."
     }
 ];
 
