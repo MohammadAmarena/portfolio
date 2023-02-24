@@ -33,10 +33,10 @@ export const PageWelcome = () => {
 					<span>
 						<div className="stage">
 							<div className="cubespinner">
-								<div className="face1">Innovative</div>
-								<div className="face2">Creative</div>
-								<div className="face3">Unbeatable</div>
 								<div className="face4">Exceptional</div>
+								<div className="face1">Innovative</div>
+								<div className="face3">Unbeatable</div>
+								<div className="face2">Creative</div>
 							</div>
 						</div>
 					</span>
@@ -44,12 +44,13 @@ export const PageWelcome = () => {
 			</div>
 			{person.map(p => {
 				return (
+					<div className="body">
 					<div className="image">
 						<img src={p.image} alt="me" />
+					</div>
 						<div className="description">
 							{p.description}
 						</div>
-
 					</div>
 				)
 			})}

@@ -3,14 +3,12 @@
 
 .pageWelcome {
     @include flex;
-    gap: 5rem;
-    height: 40rem;
+    gap: 4rem;
+    height: 39rem;
     justify-content: center;
+    margin-left: -1rem;
     a:hover,a:active{
     text-decoration:none;
-    }
-    .home{
-    width: 30%;
     }
     .home h3{
     font-size:74px;
@@ -20,11 +18,7 @@
     }
 
     .stage{
-    width: auto;
-    margin-top: 7rem;
-    @media (max-width: 1800px) {
-        margin-top: 0;
-    }
+        width: fit-content;
     }
     .cubespinner{
     animation-name:spincube;
@@ -36,54 +30,36 @@
     transform-origin:40px 40px  0;
     }
     .cubespinner div{
-        position:absolute;
-        width:400px;
-        height:80px;
-        text-align:left;
-        color: $main-green;
+        position: absolute;
+        width: fit-content;
+        height: 80px;
+        text-align: left;
         font-family: 'Courier New', Courier, monospace;
         font-size: 61px;
-        font-weight:700;
+        font-weight: 700;
         @media (max-width: 767px) {
             font-size: 45px;
         }
         }
     .cubespinner .face1{
-        color: $main-yellow;
+        color: $main-indian-red;
         transform:translateZ(40px);
-        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
     }
     .cubespinner .face2{
-        color: $white;
+        color: $main-yellow;
         transform: rotateX(90deg) translateZ(40px);
-        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
     }
     .cubespinner .face3{
         color: $main-indian-red;
         transform:rotateX(180deg)  translateZ(40px);
-        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
     }
     .cubespinner .face4{
         color:$white;
         transform:rotateX(270deg) translateZ(40px);
-        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-    }
-
-
-    @-webkit-keyframes spincube {
-    from,to  { -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
-    15%      { -webkit-transform: rotateX(90deg);}
-    25%      { -webkit-transform: rotateX(90deg);}
-    40%      { -webkit-transform: rotateX(180deg);}
-    50%      { -webkit-transform: rotateX(180deg);}
-    65%      { -webkit-transform: rotateX(270deg);}
-    75%      { -webkit-transform: rotateX(270deg);}
-    95%      { -webkit-transform: rotateX(360deg);}
-    100%      { -webkit-transform: rotateX(360deg);}
     }
     @keyframes spincube {
     from,to {
@@ -114,52 +90,56 @@
         transform: rotateX(360deg);
     }
     }
-    .image {
+    .body {
+        @media (min-width: 1000px) {
         position: absolute;
-        right: 5%;
-        top: 29%;
+        right: 1rem;
+        bottom: 3rem;
         @include flex;
         align-items: end;
-        gap: 5rem;
-        img {
-            border-radius: 50%;
-            width: 20rem;
-            height: 20rem;
-            margin-right: 2rem;
-            @media (max-width: 1000px) {
-                display: none;
-            }
+        gap: 6rem;
         }
-        .description {
-            max-width: 50rem;
-            color: #999;
-            font-style: italic;
-            font-size: 1.5rem;
-            text-shadow: 1px 1px 1px $main-yellow;
-            @media (max-width: 1000px) {
-                position: relative;
-                bottom: -30rem;
-                right: 0;
-            }
+        .image {
+            img {
+                border-radius: 50%;
+                width: 20rem;
+                height: 20rem;
+                @media (max-width: 1000px) {
+                    display: none;
+                }
         }
+    }
+    .description {
+        max-width: 40rem;
+        color: #999;
+        font-style: italic;
+        font-size: 1.3rem;
+        text-shadow: 1px 1px 1px $main-yellow;
+        @media (max-width: 1000px) {
+            padding-top: 1rem;
+            font-size: 1rem;
+        }
+    }
     }
 
     .me {
         position: relative;
+        top: -3rem;
         p {
             font-size: 1.5rem;
             color: $main-yellow;
         }
         .backName {
-            font-size: 9rem;
+            font-size: 8.5rem;
             position: absolute;
             left: 3%;
             top: -70%;
             max-width: 5rem;
             z-index: -1;
             color: #444;
-            @media (max-width: 600px) {
-                font-size: 4rem;
+            @media (max-width: 800px) {
+                font-size: 3rem;
+                top: 7rem;
             } 
         }
     .welcome {
