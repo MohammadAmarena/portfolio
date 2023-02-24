@@ -38,7 +38,7 @@
         font-size: 61px;
         font-weight: 700;
         @media (max-width: 767px) {
-            font-size: 45px;
+            font-size: 35px;
         }
         }
     .cubespinner .face1{
@@ -148,8 +148,8 @@
             white-space: nowrap;
             overflow: hidden; 
             font-family: 'corier';  
-            font-size: 1.7rem;
             color: rgba(255,255,255,.70);
+            font-size: 1.7rem;
             position: relative;
             @media (max-width: 700px) {
                 font-size: 1.3rem;
@@ -166,13 +166,17 @@
         .name {
             animation: animated-text 2s steps(30,end) 1s 1 normal both;
             color: $main-indian-red;
-    }
+        }
     .title {
+        @media (max-width: 700px) {
+            font-size: 1.1rem;
+            max-width: 260px;
+        } 
         text-align: end;
         animation: animated-text 2s steps(30,end) 3s 1 normal both
         }
     }
-        @keyframes animated-text{
+    @keyframes animated-text{
             from{width: 0;}
             to{width: 450px;}
         }
