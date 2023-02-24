@@ -115,7 +115,8 @@
         font-style: italic;
         font-size: 1.3rem;
         text-shadow: 1px 1px 1px $main-yellow;
-        @media (max-width: 1000px) {
+        @media (max-width: 550px) {
+            width: 15rem;
             padding-top: 1rem;
             font-size: 1rem;
         }
