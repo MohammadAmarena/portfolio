@@ -5,6 +5,7 @@ import filterableTable from '../../src/assets/images/filterableTable.png';
 import drum from "../../src/assets/images/drum.png";
 import myImage from '../../src/assets/images/me.jpeg'
 import toDoApp from '../../src/assets/images/toDoApp.png'
+import fitness from '../../src/assets/images/fitness.png'
 export const personData = [
     {
         firstName: "Mohammad",
@@ -20,9 +21,18 @@ export const personData = [
 export const projectsData = [
     {
     id: 1,
+    name: "Fitness Studio",
+    image: fitness,
+    tags: ["typeScript", "react", "express", "mongoDB", "node.js", "socket.io", "scss", "nodeMailer", "cloudinary", "paypal", "mailgun", "bomotstrap", "bcryptjs"],
+    source_code: "https://github.com/orgs/Final-Project-Xbody/repositories",
+    demo: "",
+    description: "A web site designed for a fitness studio that incorporates an e-commerce shop."
+},
+    {
+    id: 1,
     name: "Languages translator",
     image: translator,
-    tags: ["react", "sass", "typeScript"],
+    tags: ["react", "scss", "typeScript"],
     source_code: "https://github.com/MohammadAmarena/Language-Translator-using-React-Hooks",
     demo: "https://mohammadamarena.github.io/Language-Translator-using-React-Hooks/",
     description: "Convert written material from one or more 'source languages' into the 'target language', making sure that the translated version conveys the meaning of the original as clearly as possible."
@@ -31,7 +41,7 @@ export const projectsData = [
 	id: 2,
 	name: "ToDo App",
 	image: toDoApp,
-	tags: ["typescript", "react", "sass"],
+	tags: ["typescript", "scss", "react"],
 	source_code: "https://github.com/MohammadAmarena/todoApp",
 	demo: "https://todo-app-steel-eight.vercel.app/",
 	description: "ToDo App is generally used to maintain our day-to-day tasks or list everything that we have to do, and the least important tasks at the bottom. It is helpful in planning our daily schedules."
@@ -82,6 +92,10 @@ export const skillsData = [
     {
         type: "REACT",
         level: 80
+    },
+    {
+        type: "TYPESCRIPT",
+        level: 70
     },
 	{
 		type: "HTML",

@@ -9,11 +9,11 @@ function App() {
     <div className="App">
       <div className="container">
         <div className="header">
-          <NavLink to='/welcome'><i className="fa-solid fa-feather"></i>MoA</NavLink>
+          <NavLink to='/'><i className="fa-solid fa-feather"></i>MoA</NavLink>
           <div className="contact">
             <a href="https://www.linkedin.com/in/mohammad-amaren-195a86231/"><i className="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/MohammadAmarena"><i className="fa-brands fa-github"></i></a>
-            <a href="mailto:mohammad.amarena@gmail.com"><i className="fa-solid fa-envelope"></i></a>
+            <a href="mailto:mohammad.amaren94@gmail.com"><i className="fa-solid fa-envelope"></i></a>
           </div>
         </div>
         <nav>

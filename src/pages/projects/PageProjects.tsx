@@ -25,7 +25,7 @@ export const PageProjects = () => {
 									<div className="tags">
 										{project.tags.map(tag => {
 											return (
-												<span className={tag === 'sass' ? 'redTag' : tag ===  'react' ? 'yellowTag' : tag ===  'html' ? 'orangeTag' : 'blueTag'}>{tag}</span>
+												<span className={tag === 'scss' || tag === 'nodeMailer' ? 'redTag' : tag === 'react' || tag === 'socket.io' ? 'yellowTag' : tag === 'html' || tag === 'bcryptjs' ? 'orangeTag' : tag === 'node.js' ? 'lilaTag' : 'blueTag'}>{tag}</span>
 											)
 										})}
 									</div>

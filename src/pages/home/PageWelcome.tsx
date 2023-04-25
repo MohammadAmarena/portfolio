@@ -12,7 +12,7 @@ export const PageWelcome = () => {
 				<title>portfolio - Welcome</title>
 			</Helmet>
 			<div className="me">
-				<p>Hi Lay</p>
+				<p>Hi</p>
 				<div className="backName">Mern Developer</div>
 				{person.map((p, i: Key) => {
 					return (
