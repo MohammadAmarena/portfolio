@@ -24,12 +24,12 @@ export const projectsData = [
     name: "Fitness Studio",
     image: fitness,
     tags: ["typeScript", "react", "express", "mongoDB", "node.js", "socket.io", "scss", "nodeMailer", "cloudinary", "paypal", "mailgun", "bomotstrap", "bcryptjs"],
-    source_code: "https://github.com/orgs/Final-Project-Xbody/repositories",
+    source_code: "https://github.com/MohammadAmarena/xbody",
     demo: "",
     description: "A web site designed for a fitness studio that incorporates an e-commerce shop."
 },
     {
-    id: 1,
+    id: 2,
     name: "Languages translator",
     image: translator,
     tags: ["react", "scss", "typeScript"],
@@ -38,7 +38,7 @@ export const projectsData = [
     description: "Convert written material from one or more 'source languages' into the 'target language', making sure that the translated version conveys the meaning of the original as clearly as possible."
 },
 {
-	id: 2,
+	id: 3,
 	name: "ToDo App",
 	image: toDoApp,
 	tags: ["typescript", "scss", "react"],
@@ -47,7 +47,7 @@ export const projectsData = [
 	description: "ToDo App is generally used to maintain our day-to-day tasks or list everything that we have to do, and the least important tasks at the bottom. It is helpful in planning our daily schedules."
 	},
 	{
-	id: 3,
+	id: 4,
 	name: "Image Slider",
 	image: slider,
 	tags: ["react", "scss", "javaScript"],
