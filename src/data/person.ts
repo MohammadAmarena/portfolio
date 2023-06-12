@@ -3,7 +3,7 @@ import shop from '../../src/assets/images/shpo.png';
 import slider from '../../src/assets/images/slider.png';
 import filterableTable from '../../src/assets/images/filterableTable.png';
 import drum from "../../src/assets/images/drum.png";
-import myImage from '../../src/assets/images/me.jpeg'
+import myImage from '../../src/assets/images/myImage.png'
 import toDoApp from '../../src/assets/images/toDoApp.png'
 import fitness from '../../src/assets/images/fitness.png'
 export const personData = [
