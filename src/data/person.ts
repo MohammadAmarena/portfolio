@@ -132,6 +132,14 @@ export const skillsData = [
 	{
 		type: "GIT",
 		level: 80
+	},
+	{
+		type: "MySQL",
+		level: 60
+	},
+	{
+		type: "SEQUELIZE",
+		level: 75
 	}
 ];
 
