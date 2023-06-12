@@ -16,7 +16,6 @@ export const PageSkills = () => {
 			<div className="skill-head">
 				<motion.div
 					className="skills"
-					drag
 					dragConstraints={{ left: 0, right: 300 }}
 					dragElastic={0.2}
 				>
